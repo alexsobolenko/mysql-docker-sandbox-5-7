@@ -10,7 +10,6 @@ A lightweight local MySQL 5.7 environment powered by Docker Compose and managed 
 ## Features
 
 * MySQL 5.7
-* Persistent data storage
 * SQL query execution from the command line
 * SQL dump import support
 * Simple Makefile-based workflow
