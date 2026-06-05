@@ -1,0 +1,15 @@
+services:
+  mysql:
+    restart: always
+    image: mysql:5.7
+    command: 
+      - --character-set-server=utf8
+      - --collation-server=utf8_general_ci
+    ports:
+      - "${MYSQL_PORT}:3306"
+    volumes:
+      - ./data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
